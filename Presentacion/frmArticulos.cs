@@ -83,8 +83,24 @@ namespace Presentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            Articulo seleccionado;
             ArticuloNegocio negocio = new ArticuloNegocio();
-           // negocio.Eliminar();
+
+            DialogResult resultado = MessageBox.Show("¿En serio quieres eliminarlo?", "Eliminar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            try
+            {
+                  if (resultado == DialogResult.OK)
+                  {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                     negocio.Eliminar(seleccionado.Id);
+                      Cargar();
+                  }
+            }
+            catch (Exception ex)
+            {
+              MessageBox.Show(ex.ToString());
+            }
+               
         }
 
     }

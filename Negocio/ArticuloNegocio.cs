@@ -84,7 +84,7 @@ namespace Negocio
                 datos.SetParametros("@IdMarca", modif.marca.Id);
                 datos.SetParametros("@IdCat", modif.categoria.Id);
                 datos.SetParametros("@ImgUrl", modif.ImgUrl);
-                datos.SetParametros("@precio", modif.precio);
+                datos.SetParametros("@precio", modif.PrecioFormateado);
                 datos.SetParametros("@id", modif.Id);
                 datos.EjecutarAccion();
             }
@@ -97,9 +97,24 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
-        public void Eliminar(Articulo eliminado)
+        public void Eliminar(int Id)
         {
-            
+            AccesoDatoss datos = new AccesoDatoss();
+            try
+            {
+                datos.SetConsulta("delete from ARTICULOS where Id = @Id");
+                datos.SetParametros("@Id", Id );
+                datos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
         }
     }
 }
