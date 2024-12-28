@@ -240,7 +240,7 @@
             this.MaximizeBox = false;
             this.Name = "frmAlta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Articulo";
+            this.Text = "Nuevo articulo :)";
             this.Load += new System.EventHandler(this.frmAlta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).EndInit();
             this.ResumeLayout(false);

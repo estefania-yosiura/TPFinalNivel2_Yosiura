@@ -23,23 +23,36 @@ namespace Presentacion
         {
             InitializeComponent();
             this.arti = arti;
+            Text = "Mdificar articulo :P";
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo nuevo = new Articulo();
+
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                nuevo.Codigo = txtCodigo.Text;
-                nuevo.Nombre = txtNombre.Text;
-                nuevo.Descripcion = txtDescripcion.Text;
-                nuevo.ImgUrl = txtUrlImagen.Text;
-                nuevo.precio = int.Parse(txtPrecio.Text);
-                nuevo.marca = (Marca)cbxMarca.SelectedItem;
-                nuevo.categoria = (Categoria)cbxCategoria.SelectedItem;
-                negocio.Agregar(nuevo);
-                MessageBox.Show("Agregado exitosamente");
+                if (arti == null)
+                    arti = new Articulo();
+
+                arti.Codigo = txtCodigo.Text;
+                arti.Nombre = txtNombre.Text;
+                arti.Descripcion = txtDescripcion.Text;
+                arti.ImgUrl = txtUrlImagen.Text;
+                arti.precio = int.Parse(txtPrecio.Text);
+                arti.marca = (Marca)cbxMarca.SelectedItem;
+                arti.categoria = (Categoria)cbxCategoria.SelectedItem;
+
+                if (arti.Id != 0)
+                {
+                    negocio.Modificar(arti);
+                    MessageBox.Show("Modificado exitosamente");
+                }
+                else
+                {
+                    negocio.Agregar(arti);
+                    MessageBox.Show("Agregado exitosamente");
+                }
                 Close();
             }
             catch (Exception ex)

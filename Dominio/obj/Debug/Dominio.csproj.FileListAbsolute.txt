@@ -4,3 +4,9 @@ C:\Users\Yosiura\Desktop\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj
 C:\Users\Yosiura\Desktop\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Yosiura\Desktop\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.dll
 C:\Users\Yosiura\Desktop\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\bin\Debug\Dominio.dll
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.dll
+C:\Users\Yosiura\Desktop\Repositorio GH\TPFinalNivel2_Yosiura\TPFinalNivel2_Yosiura\Dominio\obj\Debug\Dominio.pdb
