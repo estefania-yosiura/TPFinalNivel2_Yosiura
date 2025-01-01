@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\frmalta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmalta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\frmalta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmalta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C059D9-0F71-4889-B5DB-CC630D3A702E}|Negocio\\Negocio.csproj|C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C059D9-0F71-4889-B5DB-CC630D3A702E}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|c:\\users\\yosiura\\desktop\\repositorio gh\\tpfinalnivel2_yosiura\\tpfinalnivel2_yosiura\\presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9FE86F6-A53B-409D-80B0-01A02B96DFEF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +42,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\App.config",
+              "RelativeDocumentMoniker": "Presentacion\\App.config",
+              "ToolTip": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\App.config",
+              "RelativeToolTip": "Presentacion\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-01T01:42:23.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmAlta.cs",
+              "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmAlta.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmAlta.cs",
+              "ToolTip": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmAlta.cs",
+              "RelativeToolTip": "Presentacion\\frmAlta.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T01:31:11.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmAlta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmAlta.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmAlta.cs",
+              "ToolTip": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmAlta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\frmAlta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T01:27:48.16Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmArticulos.cs",
               "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmArticulos.cs",
               "ToolTip": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmArticulos.cs",
               "RelativeToolTip": "Presentacion\\frmArticulos.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAD8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T20:49:12.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Presentacion\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmArticulos.cs",
@@ -56,19 +102,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T20:49:05.45Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\Yosiura\\Desktop\\Repositorio GH\\TPFinalNivel2_Yosiura\\TPFinalNivel2_Yosiura\\Negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T03:49:40.518Z",
-              "EditorCaption": ""
             }
           ]
         }

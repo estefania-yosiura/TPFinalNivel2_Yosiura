@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dominio;
 using Negocio;
+using System.IO;
+using System.Configuration;
 
 namespace Presentacion
 {
     public partial class frmAlta : Form
     {
+        private OpenFileDialog archivo = null;
         private Articulo arti = null;
         public frmAlta()
         {
@@ -53,7 +56,10 @@ namespace Presentacion
                     negocio.Agregar(arti);
                     MessageBox.Show("Agregado exitosamente");
                 }
-                Close();
+
+                if (archivo != null && !(txtUrlImagen.Text.ToLower().Contains("http")))
+                 File.Copy(archivo.FileName, ConfigurationManager.AppSettings["images-folder"] + archivo.SafeFileName);
+        Close();
             }
             catch (Exception ex)
             {
@@ -106,6 +112,24 @@ namespace Presentacion
 
                 pbxArticulos.Load("https://conference.nbasbl.org/wp-content/uploads/2022/05/placeholder-image-1.png");
             }
+        }
+
+        private void btnImagen_Click(object sender, EventArgs e)
+        {
+            archivo = new OpenFileDialog();
+            archivo.ShowDialog();
+            archivo.Filter = "jpg|*.jpg|png|*.png";
+            try
+            {
+              txtUrlImagen.Text = archivo.FileName;
+                CargarImagen(archivo.FileName);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+           
         }
     }
 }

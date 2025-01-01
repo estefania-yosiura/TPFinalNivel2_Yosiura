@@ -22,6 +22,11 @@ namespace Presentacion
         private void Presentacion_Load(object sender, EventArgs e)
         {
             Cargar();
+            CboCampo.Items.Add("Precio");
+            CboCampo.Items.Add("Codigo");
+            CboCampo.Items.Add("Nombre");
+            CboCampo.Items.Add("Descripcion");
+          
         }
         private void Cargar()
         {
@@ -41,8 +46,12 @@ namespace Presentacion
         }
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            CargarImagen(seleccionado.ImgUrl);
+            if (dgvArticulos.CurrentRow != null)
+            {
+               Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                CargarImagen(seleccionado.ImgUrl);
+            }
+           
         }
 
         private void OcultarColumnas()
@@ -103,5 +112,53 @@ namespace Presentacion
                
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+              string campo = CboCampo.SelectedItem.ToString();
+              string criterio = cboCriterio.SelectedItem.ToString();
+              string filtro = txtbBuscar.Text;
+              dgvArticulos.DataSource = negocio.Filtrar(campo, criterio, filtro);
+               OcultarColumnas();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+            
+        }
+
+        private void CboCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = CboCampo.SelectedItem.ToString();
+            cboCriterio.Items.Clear();
+            if (opcion == "Codigo")
+            {
+                cboCriterio.Items.Add("Empieza con");
+                cboCriterio.Items.Add("Contiene");
+                cboCriterio.Items.Add("Termina en");
+            }
+            else if (opcion == "Nombre")
+            {
+                cboCriterio.Items.Add("Empieza con");
+                cboCriterio.Items.Add("Contiene");
+                cboCriterio.Items.Add("Termina en");
+            }
+            else if (opcion == "Descripcion")
+            {
+                cboCriterio.Items.Add("Empieza con");
+                cboCriterio.Items.Add("Contiene");
+                cboCriterio.Items.Add("Termina en");
+            }
+            else if (opcion == "Precio")
+            {
+                cboCriterio.Items.Add("Mayor a");
+                cboCriterio.Items.Add("Igual a");
+                cboCriterio.Items.Add("Menor a");
+            }
+        }
     }
 }

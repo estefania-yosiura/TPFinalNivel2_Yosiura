@@ -45,6 +45,7 @@
             this.pbxArticulos = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnImagen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,7 +138,7 @@
             this.txtUrlImagen.BackColor = System.Drawing.Color.MintCream;
             this.txtUrlImagen.Location = new System.Drawing.Point(84, 118);
             this.txtUrlImagen.Name = "txtUrlImagen";
-            this.txtUrlImagen.Size = new System.Drawing.Size(291, 22);
+            this.txtUrlImagen.Size = new System.Drawing.Size(273, 22);
             this.txtUrlImagen.TabIndex = 3;
             this.txtUrlImagen.Leave += new System.EventHandler(this.txtUrlImagen_Leave);
             // 
@@ -214,12 +215,26 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // btnImagen
+            // 
+            this.btnImagen.BackColor = System.Drawing.Color.Ivory;
+            this.btnImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImagen.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnImagen.Location = new System.Drawing.Point(363, 115);
+            this.btnImagen.Name = "btnImagen";
+            this.btnImagen.Size = new System.Drawing.Size(27, 28);
+            this.btnImagen.TabIndex = 16;
+            this.btnImagen.Text = "+";
+            this.btnImagen.UseVisualStyleBackColor = false;
+            this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
+            // 
             // frmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(736, 394);
+            this.Controls.Add(this.btnImagen);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.pbxArticulos);
@@ -267,5 +282,6 @@
         private System.Windows.Forms.PictureBox pbxArticulos;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnImagen;
     }
 }
