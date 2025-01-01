@@ -15,6 +15,7 @@ namespace Presentacion
     public partial class Presentacion : Form
     {
         List<Articulo> listaArts;
+        List<Articulo> listaFiltrada;
         public Presentacion()
         {
             InitializeComponent();
@@ -84,10 +85,26 @@ namespace Presentacion
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Articulo seleccionado;
-            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            frmAlta Modificar = new frmAlta(seleccionado);
-            Modificar.ShowDialog();
-            Cargar();
+            try
+            {
+                if (dgvArticulos.Rows.Count > 0)
+                {
+                   seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    frmAlta Modificar = new frmAlta(seleccionado);
+                    Modificar.ShowDialog();
+                    Cargar();
+                }
+                else
+                {
+                    MessageBox.Show("No podes modificar si la lista esta vacia");
+                }
+                   
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -95,33 +112,94 @@ namespace Presentacion
             Articulo seleccionado;
             ArticuloNegocio negocio = new ArticuloNegocio();
 
+           if(dgvArticulos.Rows.Count > 0)
+           {
             DialogResult resultado = MessageBox.Show("¿En serio quieres eliminarlo?", "Eliminar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             try
             {
                   if (resultado == DialogResult.OK)
                   {
-                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                     negocio.Eliminar(seleccionado.Id);
-                      Cargar();
+                    try
+                    {
+                        
+                           seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                            negocio.Eliminar(seleccionado.Id);
+                            Cargar();
+                    }
+                    catch (Exception ex)
+                    {
+
+                        throw ex;
+                    }
                   }
             }
             catch (Exception ex)
             {
               MessageBox.Show(ex.ToString());
             }
+           } else
+           {
+                MessageBox.Show("No podes eliminar si la lista esta vacia");
+           }
+
                
         }
 
+        private bool ValidarFiltro()
+        {
+            if (CboCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Selecciona algun campo antes de buscar :3");
+                return true;
+            }
+
+            if (cboCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Selecciona algun criterio antes de buscar :3");
+                return true;
+            }
+
+            if (string.IsNullOrEmpty(txtbBuscar.Text))
+            {
+                MessageBox.Show("Tipee numeros para continuar");
+                return true;
+            }
+
+            if (CboCampo.SelectedItem.ToString() == "Precio")
+            {
+                if (!(SoloNumeros(txtbBuscar.Text)))
+                {
+                  MessageBox.Show("Solo hay que poner numeros en este campo :O");
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+
+        private bool SoloNumeros(string cadena)
+        {
+            foreach(char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+            return true;
+        }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
+            if (ValidarFiltro())
+                return;
+           
             try
             {
               string campo = CboCampo.SelectedItem.ToString();
               string criterio = cboCriterio.SelectedItem.ToString();
               string filtro = txtbBuscar.Text;
               dgvArticulos.DataSource = negocio.Filtrar(campo, criterio, filtro);
-               OcultarColumnas();
+              listaFiltrada = negocio.Filtrar(campo, criterio, filtro);
+                OcultarColumnas();
             }
             catch (Exception ex)
             {
